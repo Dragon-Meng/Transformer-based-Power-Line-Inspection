@@ -80,14 +80,16 @@ Once the model modifications are complete, configure your training config file a
 #### **Training Command**:
 
 ```bash
-yolo train model=none data=dataset/data.yaml epochs=150 imgsz=640 batch=16 cfg=config/your_config.yaml
+python train.py --data dataset/data.yaml --epochs 150 --batch 16 --imgsz 640 --project PLAD 
+
 
 ```
 
 #### **Testing Command**:
 
 ```bash
-yolo test model=./checkpoints/ourextramodel.pth data=dataset/data.yaml imgsz=640 batch=16
+python test.py --data /root/autodl-tmp/dataset/InsPlAD_data/Ins.yaml --split test --imgsz 640 --batch 16 --project output --name r50 --weights ./checkpoints/best_model.pth
+
 ```
 
 ---
