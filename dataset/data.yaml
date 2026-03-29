@@ -1,0 +1,26 @@
+train: /root/autodl-tmp/ultralytics-main-transmission/data/images/train
+val: /root/autodl-tmp/ultralytics-main-transmission/data/images/val
+test: /root/autodl-tmp/ultralytics-main-transmission/data/images/test
+
+# number of classes
+nc: 18
+
+# class names
+names: ['yoke',
+        'yoke suspension',
+        'spacer',
+        'stockbridge damper',
+        'lightning rod shackle',
+        'lightning rod suspension',
+        'polymer insulator',
+        'glass insulator',
+        'tower id plate',
+        'vari-grip',
+        'polymer insulator lower shackle',
+        'polymer insulator upper shackle',
+        'polymer insulator tower shackle',
+        'glass insulator big shackle',
+        'glass insulator small shackle',
+        'glass insulator tower shackle',
+        'spiral damper',
+        'sphere']
